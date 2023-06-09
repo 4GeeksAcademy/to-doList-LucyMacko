@@ -1,12 +1,53 @@
+.main{
+    margin-top: 80px;
+}
 
-/* 
+.container{
+    justify-content: space-between;
+    box-shadow: 0px 10px 18px lightgrey;
+    border:lightgrey;
+}
+h1{
+    color:lightcoral;
+    text-align: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+input{
+    width:100%;
+    border:none;
+    padding:10px;
+}
 
-*/
+ul{
+    justify-content: center;
+    padding:0;
+    margin:0;
+    display:block;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+
+li{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    opacity:0;
+    transition: opacity 0.3s;
+    color:lightcoral;
+}
+
+li:hover i {
+    opacity:1;
+}
+
+.footer{
+    margin:0;
+    padding:0;
+}
