@@ -9,7 +9,7 @@ const Home = () => {
 		<div className="main">
 			<div className="container">
 				<h1>
-					To Do List
+					To Do List 📝
 				</h1>				
 				<ul>
 					<li>
@@ -19,13 +19,13 @@ const Home = () => {
 							value={newTask}
 							onKeyDown={(e) => {
 								if (e.key === 'Enter'){
-								setToDoTasks(toDoTasks.concat(newTask));
-								setNewTask("");
+									setToDoTasks(toDoTasks.concat(newTask));
+									setNewTask("");
 								}
 							}}
 							placeholder="What needs to be done?😎"></input>
 					</li>
-				{toDoTasks.map((task, index) => (
+					{toDoTasks.map((task, index) => (
 					<li>{task}
 						<i 
 						className="far fa-trash-alt pe-2"
@@ -40,9 +40,16 @@ const Home = () => {
 					))}                
 				</ul>
 				<div className="footer">
-					{toDoTasks.length} task(s) left
-				</div>
+					<strong>{toDoTasks.length}</strong> task(s) left
+				</div>				
 			</div>
+			<div className="container">
+				<div className="container" id="p1"></div>
+				<div className="container" id="p2"></div>
+			</div>
+			<div className="container-fluid" id="byebye">
+				<p>Made with love and lots of patience 😅</p>
+			</div>				
 		</div>
     )
 }
