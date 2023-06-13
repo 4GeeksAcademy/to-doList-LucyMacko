@@ -3,7 +3,7 @@ import React, {useState} from "react";
 const Home = () => {
 
 	const [newTask, setNewTask] = useState('');
-    const [toDoTasks, setToDoTasks] = useState([]);
+    const [toDoTasks, setToDoTasks] = useState(['example task (delete me!)']);
 
 	return(
 		<div className="main">
@@ -24,7 +24,7 @@ const Home = () => {
 								}
 							}}
 							placeholder="What needs to be done?😎"></input>
-					</li>
+					    </li>
 					{toDoTasks.map((task, index) => (
 					<li>{task}
 						<i 
@@ -37,7 +37,7 @@ const Home = () => {
 								)
 						))}></i>
 					</li>
-					))}                
+					))}            
 				</ul>
 				<div className="footer">
 					<strong>{toDoTasks.length}</strong> task(s) left
